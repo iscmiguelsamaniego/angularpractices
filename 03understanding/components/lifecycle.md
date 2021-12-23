@@ -24,11 +24,12 @@ ngOnChanges(changes: SimpleChanges) {
   }
 }
 ```
-```angular
+```js
 ngOnInit() {
   this.logger.log(`Spy #${this.id} onInit`);
 }
-
+```
+```
 ngDoCheck() {
 
   if (this.hero.name !== this.oldHeroName) {
@@ -60,13 +61,15 @@ ngDoCheck() {
 
   this.changeDetected = false;
 }
-
+```
+```
 ngAfterContentInit() {
   // contentChild is set after the content has been initialized
   this.logIt('AfterContentInit');
   this.doSomething();
 }
-
+```
+```
 ngAfterContentChecked() {
   // contentChild is updated after the content has been checked
   if (this.prevHero === this.contentChild.hero) {
@@ -77,13 +80,15 @@ ngAfterContentChecked() {
     this.doSomething();
   }
 }
-
+```
+```
 ngAfterViewInit() {
   // viewChild is set after the view has been initialized
   this.logIt('AfterViewInit');
   this.doSomething();
 }
-
+```
+```
 ngAfterViewChecked() {
   // viewChild is updated after the view has been checked
   if (this.prevHero === this.viewChild.hero) {
@@ -94,7 +99,8 @@ ngAfterViewChecked() {
     this.doSomething();
   }
 }
-
+```
+```
 ngOnDestroy() {
   this.logger.log(`Spy #${this.id} onDestroy`);
 }
