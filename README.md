@@ -1,2 +1,1 @@
-# angularpractices
-Angular code learning
+# Angular code learning
