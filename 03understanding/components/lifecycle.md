@@ -14,7 +14,7 @@ ngAfterViewInit() | Called once after the first ngAfterContentChecked() |
 ngAfterViewChecked() | Called after the ngAfterViewInit() and ngAfterContentChecked() |
 ngOnDestroy() | Called immediately before Angular destroys |
 
-```
+```ruby
 ngOnChanges(changes: SimpleChanges) {
   for (const propName in changes) {
     const chng = changes[propName];
