@@ -14,7 +14,7 @@ ngAfterViewInit() | Called once after the first ngAfterContentChecked() |
 ngAfterViewChecked() | Called after the ngAfterViewInit() and ngAfterContentChecked() |
 ngOnDestroy() | Called immediately before Angular destroys |
 
-```ruby
+```js
 ngOnChanges(changes: SimpleChanges) {
   for (const propName in changes) {
     const chng = changes[propName];
@@ -29,7 +29,7 @@ ngOnInit() {
   this.logger.log(`Spy #${this.id} onInit`);
 }
 ```
-```
+```js
 ngDoCheck() {
 
   if (this.hero.name !== this.oldHeroName) {
@@ -62,14 +62,14 @@ ngDoCheck() {
   this.changeDetected = false;
 }
 ```
-```
+```js
 ngAfterContentInit() {
   // contentChild is set after the content has been initialized
   this.logIt('AfterContentInit');
   this.doSomething();
 }
 ```
-```
+```js
 ngAfterContentChecked() {
   // contentChild is updated after the content has been checked
   if (this.prevHero === this.contentChild.hero) {
@@ -81,14 +81,14 @@ ngAfterContentChecked() {
   }
 }
 ```
-```
+```js
 ngAfterViewInit() {
   // viewChild is set after the view has been initialized
   this.logIt('AfterViewInit');
   this.doSomething();
 }
 ```
-```
+```js
 ngAfterViewChecked() {
   // viewChild is updated after the view has been checked
   if (this.prevHero === this.viewChild.hero) {
@@ -100,7 +100,7 @@ ngAfterViewChecked() {
   }
 }
 ```
-```
+```js
 ngOnDestroy() {
   this.logger.log(`Spy #${this.id} onDestroy`);
 }
