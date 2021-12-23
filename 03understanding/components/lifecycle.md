@@ -14,7 +14,7 @@ ngAfterViewInit() | Called once after the first ngAfterContentChecked() |
 ngAfterViewChecked() | Called after the ngAfterViewInit() and ngAfterContentChecked() |
 ngOnDestroy() | Called immediately before Angular destroys |
 
-```angular
+```
 ngOnChanges(changes: SimpleChanges) {
   for (const propName in changes) {
     const chng = changes[propName];
@@ -23,7 +23,8 @@ ngOnChanges(changes: SimpleChanges) {
     this.changeLog.push(`${propName}: currentValue = ${cur}, previousValue = ${prev}`);
   }
 }
-
+```
+```angular
 ngOnInit() {
   this.logger.log(`Spy #${this.id} onInit`);
 }
