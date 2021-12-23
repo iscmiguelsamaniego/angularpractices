@@ -5,23 +5,16 @@
 
 
 Hook method | Timing |  
---- | --- | 
 ngOnChanges() | Called before ngOnInit() |
---- | --- | 
 ngOnInit() | Called once after the first ngOnChanges() |
---- | --- | 
 ngDoCheck() | Called immediately after ngOnChanges() and ngOnInit() |
---- | --- | 
 ngAfterContentInit() | Called once after the first ngDoCheck()|
---- | --- | 
 ngAfterContentChecked() | Called after ngAfterContentInit() and every subsequent ngDoCheck() |
---- | --- | 
 ngAfterViewInit() | Called once after the first ngAfterContentChecked() |
---- | --- | 
 ngAfterViewChecked() | Called after the ngAfterViewInit() and ngAfterContentChecked() |
---- | --- | 
 ngOnDestroy() | Called immediately before Angular destroys |
 
+```angular
 ngOnChanges(changes: SimpleChanges) {
   for (const propName in changes) {
     const chng = changes[propName];
@@ -104,3 +97,4 @@ ngAfterViewChecked() {
 ngOnDestroy() {
   this.logger.log(`Spy #${this.id} onDestroy`);
 }
+```
