@@ -1,3 +1,3 @@
 # Angular code learning
 
-![](images/angularmindmap.png)
+<img src="/iscmiguelsamaniego/angularpractices/blob/main/angularmindmap.png?raw=true" alt="angularmindmap.png">
