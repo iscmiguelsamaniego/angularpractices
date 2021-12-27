@@ -1,4 +1,4 @@
-# Viewencapsulationsample
+# View encapsulation sample
 
 1.- Create new angular project
 
