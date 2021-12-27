@@ -1,0 +1,3 @@
+h2, .emulated-message { color: green; }
+app-no-encapsulation { display: block; max-width: 500px; padding: 5px; margin: 5px 0; }
+ app-no-encapsulation { border: solid 2px red; }
