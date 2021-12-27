@@ -10,5 +10,5 @@ ng generate component emulated-encapsulation<br/>
 ng generate component no-encapsulation<br/>
 ng generate component shadow-dom-encapsulation<br/>
 
-3.- Follow instruction from :
+3.- Follow instructions from :
 https://angular.io/guide/view-encapsulation
